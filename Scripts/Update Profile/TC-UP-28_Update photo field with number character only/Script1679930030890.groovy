@@ -31,5 +31,5 @@ auth_token = token
 updateProfileResponse = WS.sendRequest(findTestObject('Postman/Update Profile', [('name') : 'update name', ('whatsapp') : '1234567890'
             , ('birth_date') : '1995-05-04', ('photo') : '12345', ('bio') : 'Software Dev', ('position') : 'mobile dev', ('auth_token') : auth_token]))
 
-WS.verifyResponseStatusCode(updateProfileResponse, 200)
+WS.verifyResponseStatusCode(updateProfileResponse, 401)
 

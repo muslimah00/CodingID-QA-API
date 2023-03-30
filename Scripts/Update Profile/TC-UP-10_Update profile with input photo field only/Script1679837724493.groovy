@@ -29,8 +29,12 @@ String token = parsedJson.success.token
 def auth_token = token
 
 response = WS.sendRequest(findTestObject('Postman/Update Profile', [('name') : '', ('whatsapp') : '', ('birth_date') : ''
+<<<<<<< Updated upstream
             , ('photo') : 'C:\\Users\\ACER\\OneDrive\\Pictures\\pintrest\\tree-gibli.jpg', ('bio') : '', ('position') : ''
             , ('auth_token') : auth_token]))
+=======
+            , ('photo') : 'C:\\Users\\ACER\\Pictures\\ProfilePic.jpg', ('bio') : '', ('position') : '', ('auth_token') : auth_token]))
+>>>>>>> Stashed changes
 
 WS.verifyResponseStatusCode(response, 200)
 
