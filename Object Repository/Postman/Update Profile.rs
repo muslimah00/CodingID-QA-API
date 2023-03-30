@@ -39,12 +39,6 @@
       &quot;contentType&quot;: &quot;&quot;
     },
     {
-      &quot;name&quot;: &quot;photo&quot;,
-      &quot;value&quot;: &quot;${photo}&quot;,
-      &quot;type&quot;: &quot;file&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
       &quot;name&quot;: &quot;bio&quot;,
       &quot;value&quot;: &quot;${bio}&quot;,
       &quot;type&quot;: &quot;text&quot;,
@@ -109,7 +103,7 @@
       <name>birth_date</name>
    </variables>
    <variables>
-      <defaultValue>'C:\\Users\\ACER\\Pictures\\ProfilePic.jpg'</defaultValue>
+      <defaultValue>'C:\\Users\\ACER\\OneDrive\\Pictures\\pintrest\\tree-gibli.jpg'</defaultValue>
       <description></description>
       <id>08f853ac-8969-4139-9370-09a6bc6d7769</id>
       <masked>false</masked>
