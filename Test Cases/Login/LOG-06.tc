@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Login using an invalid password</description>
+   <name>LOG-06</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <testCaseGuid>30a8bfa2-fcb8-428c-abe4-d2aeceb5ea14</testCaseGuid>
+</TestCaseEntity>
