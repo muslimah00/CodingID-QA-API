@@ -17,6 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
+import com.kms.katalon.core.testdata.TestDataFactory
+import com.kms.katalon.core.exception.StepFailedException
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.configuration.RunConfiguration
+import java.io.File
 
 response = WS.sendRequest(findTestObject('Postman/Login', [('email') : 'cihek19445@hempyl.com', ('password') : 'P@ssw0rd']))
 
@@ -28,8 +34,14 @@ String token = parsedJson.success.token
 
 auth_token = token
 
-updateProfileResponse = WS.sendRequest(findTestObject('Postman/Update Profile one by one/Update Profile - Birthdate only', 
-        [('birth_date') : '31-12-1900']))
+String uploadFilePath = "/Include/Resources/"
+String uploadFileName = "cat01.jpeg"
+File file = new File(RunConfiguration.getProjectDir(), uploadFilePath + uploadFileName)
+
+println(file.getAbsolutePath())
+
+updateProfileResponse = WS.sendRequest(findTestObject('Postman/Update Profile one by one/Update Profile - Photo only', 
+        [('photo') : file]))
 
 WS.verifyResponseStatusCode(updateProfileResponse, 400)
 

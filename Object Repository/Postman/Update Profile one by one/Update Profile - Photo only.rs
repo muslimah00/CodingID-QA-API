@@ -15,14 +15,15 @@
       </authorizationInfo>
       <authorizationType>Bearer</authorizationType>
    </authorizationRequest>
-   <connectionTimeout>0</connectionTimeout>
+   <autoUpdateContent>false</autoUpdateContent>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
   &quot;parameters&quot;: [
     {
       &quot;name&quot;: &quot;photo&quot;,
-      &quot;value&quot;: &quot;&quot;,
+      &quot;value&quot;: &quot;${photo}&quot;,
       &quot;type&quot;: &quot;File&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -45,7 +46,7 @@
       <webElementGuid>83feebac-115c-4bf0-b592-c5bffdf13cc6</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.5.5</katalonVersion>
-   <maxResponseSize>0</maxResponseSize>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>https://demo-app.online/api/updateprofile</restUrl>
@@ -55,8 +56,22 @@
    <soapRequestMethod></soapRequestMethod>
    <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>0</socketTimeout>
+   <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8d86227c-5c10-4b95-aac9-65c249966765</id>
+      <masked>false</masked>
+      <name>photo</name>
+   </variables>
+   <variables>
+      <defaultValue>'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzIiwianRpIjoiZGViZjNkYTgzMDY2YTFhZjYxN2M2ZThmOGFmMDBlZmU5YzQ2MWM5ZWY1Yjc4YWUwZDVhMDkwYWY2Yjc5ZjIzZTJkYzM0MTdlNTM0MTM3ZmMiLCJpYXQiOjE2Nzk3MzMwMjYuMjQ0NDY4LCJuYmYiOjE2Nzk3MzMwMjYuMjQ0NDcxLCJleHAiOjE3MTEzNTU0MjYuMjM1NDAxLCJzdWIiOiI2NCIsInNjb3BlcyI6W119.HincnQRzcoem3UKt6uO1qGgGincU-aD06LuG1zy9WmwCEk5KuvpILjTvzhUhdNaQ3WDUt7HizygVCS3-ZHETh7pc69EcBy1HJkEkbrQlnPQWBlIxOQUD_hdVaCmXJKiRMu-Eaw33vfYpbbfTTnDO6yw6mF4sEm6bxZSR0am7qmrUeJPoZP_utSQUhvKQfCRhthEuT9iUtW6r-vD6-Z9FcWXfvlDFruNl8ZnbmaplgE7CmQgmo17eIgYGqa7VmvAqnAJsajvA4ey5Js_sK_4cTXobIbwPuojFKfkQmtxRweTrcCDUHCR7xwyjP6EuJZ7j_IebECSdyo-mHkQdKkyBTcruExJWTJMJNnarfQQkOt30MPLU5btcj8U9IkGJZxRNycIfm-yJpy0dDfcFQr3g68wvKP4QJzziLMqztDpnI-v-wA3gzH9N3QhZANs04kG4M_yJFnggqo3anbpvvh2VRJqjCEvGOPHUfb9gNLeX0MTYXydZFyg-LUdpYi86vJu41Nx8ogMMFC3dWRGEEsr4ThHOPLVITQOwhMVvhpHcusqQRj9mUqA_GYkhwiCqg40E_bY0IgUGrHeQeTNueUwR1z981rv9Ei4ao8Q6CKI8uc_1uI6S9lZEBrpnacW7tyTZSU-mBCGaSUyocH3r8cnGNn5fmMj5Yfuww60rritvcnc'</defaultValue>
+      <description></description>
+      <id>3b87c452-07c8-45e4-9549-5d5ddd71b5ea</id>
+      <masked>false</masked>
+      <name>auth_token</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

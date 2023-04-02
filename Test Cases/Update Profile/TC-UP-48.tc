@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;Update photo with a relatively long filename (300 char)&quot;</description>
+   <name>TC-UP-48</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <testCaseGuid>3b00c20c-e41d-43f9-9ffe-f7b9a4c128a3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;Update photo with non-photo format renamed to one&quot;</description>
+   <name>TC-UP-47</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <testCaseGuid>2d6a025c-07d5-40ff-84c2-3110f88e5689</testCaseGuid>
+</TestCaseEntity>
