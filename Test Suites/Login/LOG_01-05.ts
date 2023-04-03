@@ -15,35 +15,35 @@
       <guid>74b72a42-bfe0-47c2-b061-39b234243dae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/LOG-01_Login with registered account</testCaseId>
+      <testCaseId>Test Cases/Login/LOG-01</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d2210cb9-6b0d-42af-9995-da7dc2729f46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/LOG-02_Login with unregistered account</testCaseId>
+      <testCaseId>Test Cases/Login/LOG-02</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>a2dd452e-25ec-41a0-98b5-d4a1cc96fd6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/LOG-03_Login without any input</testCaseId>
+      <testCaseId>Test Cases/Login/LOG-03</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>553506be-5465-4ae8-b6ad-ff6d90218167</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/LOG-04_Login with email input only</testCaseId>
+      <testCaseId>Test Cases/Login/LOG-04</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b8bad4eb-0bff-4501-9ffa-c5f8e6404568</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Login/LOG-05_Login with password input only</testCaseId>
+      <testCaseId>Test Cases/Login/LOG-05</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
