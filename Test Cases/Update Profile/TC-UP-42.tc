@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Update birth date field with invalid date format</description>
+   <name>TC-UP-42</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <testCaseGuid>b551367e-ce9f-4a6b-aca8-b65df7c75c87</testCaseGuid>
+</TestCaseEntity>

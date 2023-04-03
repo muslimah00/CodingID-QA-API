@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Postman/Login', [('email') : 'cihek19445@hempyl.com', ('password') : 'P@ssw0rd']))
+response = WS.sendRequest(findTestObject('Postman/Login', [('email') : 'rizkikhaerulfajri@gmail.com', ('password') : 'invalidPassword']))
 
-WS.verifyResponseStatusCode(response, 200)
-
+WS.verifyResponseStatusCode(response, 401)

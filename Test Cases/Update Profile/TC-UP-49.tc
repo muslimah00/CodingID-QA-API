@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Update photo with a relatively hugefilesize (15 MB)</description>
+   <name>TC-UP-49</name>
+   <tag>Negative</tag>
+   <comment></comment>
+   <testCaseGuid>cf0c9595-f57f-4c73-8a9a-6999b41aa5ae</testCaseGuid>
+</TestCaseEntity>

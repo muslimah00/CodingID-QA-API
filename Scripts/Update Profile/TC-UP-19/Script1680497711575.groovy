@@ -17,7 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
-import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testdata.TestDataFactory
+import com.kms.katalon.core.exception.StepFailedException
+import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.kms.katalon.core.configuration.RunConfiguration
+import java.io.File
 
 response = WS.sendRequest(findTestObject('Postman/Login', [('email') : 'cihek19445@hempyl.com', ('password') : 'P@ssw0rd']))
 
@@ -29,18 +34,14 @@ String token = parsedJson.success.token
 
 auth_token = token
 
-// Code dibawah ini untuk ubah input type text ke input type file, tapi belum selesai
-//RequestObject updateProfileRequest = findTestObject('Postman/Update Profile')
-//
-//updateProfileRequestBody = updateProfileRequest.getHttpBody()
-//updateProfileRequestBody = updateProfileRequestBody
-//System.out.println(updateProfileRequestBody)
-//
-//updateProfileRequest.setHttpBody(updateProfileRequestBody)
+String uploadFilePath = "/Include/Resources/"
+String uploadFileName = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.jpg"
+File file = new File(RunConfiguration.getProjectDir(), uploadFilePath + uploadFileName)
 
-updateProfileResponse = WS.sendRequest(findTestObject('Postman/Update Profile', [('name') : 'update name', ('whatsapp') : '1234567890'
-			, ('birth_date') : '', ('photo') : 'C:\\Users\\ACER\\Pictures\\ProfilePic.jpg', ('bio') : 'Software Dev', ('position') : 'mobile dev'
-			, ('auth_token') : auth_token]))
+println(file.getAbsolutePath())
 
-WS.verifyResponseStatusCode(updateProfileResponse, 200)
+updateProfileResponse = WS.sendRequest(findTestObject('Postman/Update Profile one by one/Update Profile - Photo only', 
+        [('photo') : file]))
+
+WS.verifyResponseStatusCode(updateProfileResponse, 400)
 

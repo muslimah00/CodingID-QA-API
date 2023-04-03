@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>&quot;Update photo with proper photo format (JPG, PNG, GIF, BMP, WEbP)&quot;</description>
+   <name>TC-UP-45</name>
+   <tag>Positive</tag>
+   <comment></comment>
+   <testCaseGuid>ea415e54-865d-4d98-9189-2800b95fec6a</testCaseGuid>
+</TestCaseEntity>
