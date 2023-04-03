@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Update Profile</name>
+   <name>Update Profile - Bio only</name>
    <tag></tag>
-   <elementGuidId>d04c3aba-2b4a-4823-95cc-956e87fc48b9</elementGuidId>
+   <elementGuidId>be8711ed-51d3-4ceb-99be-62a3b82211e8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <authorizationRequest>
@@ -21,41 +21,8 @@
    <httpBodyContent>{
   &quot;parameters&quot;: [
     {
-      &quot;name&quot;: &quot;name&quot;,
-      &quot;value&quot;: &quot;${name}&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-      &quot;name&quot;: &quot;whatsapp&quot;,
-      &quot;value&quot;: &quot;${whatsapp}&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-      &quot;name&quot;: &quot;birth_date&quot;,
-      &quot;value&quot;: &quot;${birth_date}&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-//<<<<<<< Update_Profile
-      &quot;name&quot;: &quot;photo&quot;,
-      &quot;value&quot;: &quot;${photo}&quot;,
-      &quot;type&quot;: &quot;File&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-//=======
-//>>>>>>> main
       &quot;name&quot;: &quot;bio&quot;,
       &quot;value&quot;: &quot;${bio}&quot;,
-      &quot;type&quot;: &quot;text&quot;,
-      &quot;contentType&quot;: &quot;&quot;
-    },
-    {
-      &quot;name&quot;: &quot;position&quot;,
-      &quot;value&quot;: &quot;${position}&quot;,
       &quot;type&quot;: &quot;text&quot;,
       &quot;contentType&quot;: &quot;&quot;
     }
@@ -112,11 +79,7 @@
       <name>birth_date</name>
    </variables>
    <variables>
-//<<<<<<< Update_Profile
       <defaultValue>'D:\\Bahan Soto Shop\\clip_paper.jpg'</defaultValue>
-//=======
-      // <defaultValue>'C:\\Users\\ACER\\OneDrive\\Pictures\\pintrest\\tree-gibli.jpg'</defaultValue>
-//>>>>>>> main
       <description></description>
       <id>08f853ac-8969-4139-9370-09a6bc6d7769</id>
       <masked>false</masked>
