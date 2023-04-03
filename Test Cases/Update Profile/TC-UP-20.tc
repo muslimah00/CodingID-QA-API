@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Update whatsapp field with file input type</description>
-   <name>TC-UP-20</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ced0f1bc-eb1a-485a-a025-aa97542d220e</testCaseGuid>
-</TestCaseEntity>

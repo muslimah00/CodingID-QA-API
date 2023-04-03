@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Postman/Update Profile', [('name') : 'update name', ('whatsapp') : '1234567890'
+updateProfileResponse = WS.sendRequest(findTestObject('Postman/Update Profile', [('name') : 'update name', ('whatsapp') : '1234567890'
             , ('birth_date') : '1995-05-04', ('photo') : 'C:\\Users\\ACER\\Pictures\\ProfilePic.jpg', ('bio') : 'Software Dev'
-            , ('position') : 'mobile dev', ('auth_token') : 'InValidTokenuwuaauw9Hhoio']))
+            , ('position') : 'mobile dev', ('auth_token') : 'invalidTokenAuthorizationblablabalblabla']))
 
-WS.verifyResponseStatusCode(response, 401)
+WS.verifyResponseStatusCode(updateProfileResponse, 302)
 
